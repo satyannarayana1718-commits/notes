@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f6f2;
+    color: #292820;
+    padding: 55px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+header p {
+    color: #929087;
+    margin-top: 9px;
+    font-size: 15px;
+}
+
+.note-form {
+    background: #fff;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #00000007;
+    margin-bottom: 40px;
+    border: 1px solid #eeede7;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #eeede7;
+    background: #fcfcfa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 11px;
+    font-size: 15px;
+    outline: none;
+    font-family: inherit;
+    transition: .2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #b8aa8b;
+    background: white;
+}
+
+textarea {
+    min-height: 115px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    padding: 12px 21px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.save-btn {
+    background: #292820;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #514d3e;
+}
+
+.notes-heading {
+    margin-bottom: 22px;
+    font-size: 22px;
+    letter-spacing: -.5px;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    background: #fff;
+    padding: 23px;
+    border-radius: 16px;
+    border: 1px solid #eeede7;
+    min-height: 165px;
+    box-shadow: 0 5px 20px #00000005;
+    transition: .25s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px #0000000d;
+}
+
+.note-card h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.note-card p {
+    color: #77766f;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn {
+    background: #f0eee6;
+    color: #514d3e;
+}
+
+.delete-btn {
+    background: #fff0ed;
+    color: #c35c50;
+}
+
+.empty {
+    color: #999;
+    text-align: center;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+}
+
+@media(max-width: 500px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .note-form {
+        padding: 20px;
+    }
+}
