@@ -441,3 +441,6 @@ except sqlite3.OperationalError:
 
 conn.commit()
 conn.close()
+#start Flask application
+if _name _ =="_main_":
+   app.run(host="0.0.0.0",port =5000,debug=true)
