@@ -424,8 +424,7 @@ def delete_note(note_id):
         db.execute("DELETE FROM notes WHERE id=?", (note_id,))
     return jsonify({"message": "Note deleted"})
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
 conn = sqlite3.connect("notes.db")
 cursor = conn.cursor()
 
